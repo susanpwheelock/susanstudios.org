@@ -76,6 +76,8 @@ h4 {
     font-weight: 400;
     letter-spacing: 0.1rem;
     font-size: 1.25em;
+    a:link, a:visited { color: #000; }
+    a:focus, a:hover, a:active { color: #BFA754; }
 }
 
 p {
@@ -155,6 +157,14 @@ footer h2 {
 }
 
 .desktop:hover {
+    transform: scale(1.05);
+}
+
+.cook {
+    transition: all 0.5s ease;
+}
+
+.cook:hover {
     transform: scale(1.05);
 }
 
@@ -300,12 +310,12 @@ footer h2 {
 
 .expressive {
     display: flex;
-    max-width: 100%;
-    width: 48.5%;
 }
 
 .expressive img {
     padding-left: 1em;
+    min-width: 0;
+    flex: 1;
 }
 
 .one {
@@ -369,6 +379,20 @@ footer h2 {
     padding-bottom: 7%;
     }
 
+.button {
+    text-align: center;
+    margin-bottom: 10%;
+    min-width: 0;
+}
+
+.expressive {
+    flex-direction: column;
+}
+
+.black {
+    align-content: center;
+    background-color: #000;
+}
 /* HOME STYLES */
 
     .about {
@@ -466,6 +490,10 @@ footer h2 {
     .foot {
         font-size: 2.5em;
     }
+
+.button {
+    text-align: center;
+}
 
 /* HOME STYLES */
 
