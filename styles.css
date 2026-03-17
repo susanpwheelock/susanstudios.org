@@ -99,6 +99,14 @@ footer h2 {
     letter-spacing: 0.3rem;
 }
 
+.foot {
+    transition: all 0.5s ease;
+}
+
+.foot:hover {
+    transform: scale(1.05);
+}
+
 /* HOME STYLES */
 .about {
     display: grid;
@@ -222,24 +230,41 @@ footer h2 {
     padding-right: 10%;
     padding-top: 3%;
     padding-bottom: 6%;
+    a:link, a:visited { color: #000; }
+    a:focus, a:hover, a:active { color: #BFA754; }
 }
 
 .email {
     background-color: white;
     padding-top: 3em;
     padding-bottom: 3em;
+    transition: all 0.5s ease;
+}
+
+.email:hover {
+    transform: scale(1.05);
 }
 
 .phone {
     background-color: white;
     padding-top: 3em;
     padding-bottom: 3em;
+    transition: all 0.5s ease;
+}
+
+.phone:hover {
+    transform: scale(1.05);
 }
 
 .linkedin {
     background-color: white;
     padding-top: 3em;
     padding-bottom: 3em;
+    transition: all 0.5s ease;
+}
+
+.linkedin:hover {
+    transform: scale(1.05);
 }
 
 .information {
@@ -306,6 +331,15 @@ footer h2 {
     margin-left: 40%;
     margin-right: 40%;
     margin-bottom: 5%;
+}
+
+.button{
+    transition: all 0.5s ease;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    a:focus, a:hover, a:active { color: #BFA754; }
 }
 
 .expressive {
