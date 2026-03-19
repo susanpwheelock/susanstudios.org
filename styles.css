@@ -29,8 +29,8 @@ nav ul li {
     text-transform: uppercase;
     list-style: none;
     letter-spacing: 0.2rem;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
 }
 
 nav ul {
@@ -308,6 +308,7 @@ footer h2 {
 }
 .sub-info {
     padding-top: 18%;
+    padding-right: 15%;
 }
 
 .container3 img{
@@ -495,10 +496,11 @@ footer h2 {
     nav ul li {
         padding-left: 1.25em;
         padding-right: 1.25em;
+        font-size: 0.75em;
     }
 
     .title-of-page {
-    font-size: 2em;
+    font-size: 1.5em;
     }
 
     h1 {
