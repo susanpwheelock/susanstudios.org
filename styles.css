@@ -11,7 +11,6 @@ body {
 header {
     color: white;
     background-color: #052A4C;
-    text-align: center;
     padding: 1em;
 }
 
@@ -36,15 +35,13 @@ nav ul li {
 nav ul {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-.title-of-page {
-    font-size: 3em;
-    font-family: "cofo-raffine", serif;
-    letter-spacing: 0.3rem;
-    font-weight: 600;
-    text-transform: none;
+.logo{ 
+    width: 100%;
+    max-width: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 h1 {
@@ -373,20 +370,25 @@ footer h2 {
 
 /* ALL STYLES */
 
+header {
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
     nav ul li {
-        font-size: 0.75em;
+        font-size: 0.5em;
         padding: 1em;
-        padding-left: 0.1em;
+        padding-left: 0.5em;
         text-align: left;
     }
 
-    nav ul {
-        display:block;
-    }
+nav ul {
+    padding-left: 5%;
+}
 
-    .title-of-page {
-    font-size: 1.5em;
-    padding-left: 0.5em;
+    .logo {
+    max-width: 15%;
+    padding-right: 5%;
+    padding-left: 0;
     }
 
     h1 {
@@ -493,14 +495,24 @@ footer h2 {
     
 /* ALL STYLES */
 
+header {
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+nav ul {
+    padding-left: 5%;
+}
+
     nav ul li {
-        padding-left: 1.25em;
-        padding-right: 1.25em;
-        font-size: 0.75em;
+        padding-left: 1em;
+        font-size: 1em;
     }
 
-    .title-of-page {
-    font-size: 1.5em;
+    .logo {
+    max-width: 12%;
+    padding-right: 5%;
+    padding-left: 0;
     }
 
     h1 {
