@@ -31,6 +31,7 @@ nav ul li {
     letter-spacing: 0.2rem;
     padding-left: 1.25em;
     padding-right: 1.25em;
+
 }
 
 nav ul {
@@ -96,12 +97,13 @@ footer h2 {
     letter-spacing: 0.3rem;
 }
 
-.foot {
+.footlogo {
     transition: all 0.5s ease;
+    width: 100%;
 }
 
-.foot:hover {
-    transform: scale(1.05);
+.footlogo:hover {
+    transform: scale(1.15);
 }
 
 /* HOME STYLES */
@@ -406,9 +408,8 @@ nav ul {
         font-size: 0.5em;
     }
 
-    .foot {
-    font-size: 2.5em;
-    padding-bottom: 7%;
+    .footlogo {
+        max-width: 30%;
     }
 
 .button {
@@ -526,8 +527,8 @@ header {
         font-size: 0.6em;
     }
 
-    .foot {
-        font-size: 2.5em;
+    .footlogo {
+        max-width: 80%;
     }
 
 .contact2 {
