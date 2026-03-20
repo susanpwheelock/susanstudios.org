@@ -100,6 +100,7 @@ footer h2 {
 .footlogo {
     transition: all 0.5s ease;
     width: 100%;
+    max-width: 100%;
 }
 
 .footlogo:hover {
