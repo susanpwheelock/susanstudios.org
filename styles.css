@@ -73,7 +73,7 @@ h4 {
     font-family: "dm-sans", sans-serif;
     font-weight: 400;
     letter-spacing: 0.1rem;
-    font-size: 1.25em;
+    font-size: 1em;
     a:link, a:visited { color: #000; }
     a:focus, a:hover, a:active { color: #BFA754; }
 }
