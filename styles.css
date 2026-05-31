@@ -1027,11 +1027,15 @@ header {
     padding-right: 15%;
     }
 
+    .contact1 img {
+    width: 50%;
+}
+    
     .container2 {
         grid-template-columns: repeat(3, 1fr);
         margin-left: 5%;
         margin-right: 5%;
-        gap: 0.5em;
+        gap: 0em;
     }
         .about-content {
         padding-left: 1em;
@@ -1046,19 +1050,34 @@ header {
         padding-top: 1em;
         padding-bottom: 1em;
         border-radius: 30px;
+        border: none;
     }
+
+     .email:hover {
+    border: none;
+}
 
     .instagram {
         padding-top: 1em;
         padding-bottom: 1em;
         border-radius: 30px;
+        border: none;
     }
+
+     .instagram:hover {
+    border: none;
+}
 
     .linkedin {
         padding-top: 1em;
         padding-bottom: 1em;
         border-radius: 30px;
+        border: none;
     }
+
+    .linkedin:hover {
+    border: none;
+}
 
     .about-content .button a {
         margin-left: 25%;
@@ -1066,7 +1085,7 @@ header {
     }
 
     .container2 h3 {
-        font-size: 0.6em;
+        display: none;
     }
 
     .container2 h4 {
@@ -1403,26 +1422,33 @@ header {
     padding-right: 15%;
     }
 
+    .contact1 img {
+    width: 50%;
+}
+
     .email {
         padding-top: 2em;
         padding-bottom: 2em;
         border-radius: 30px;
+        border: none;
     }
 
     .instagram {
         padding-top: 2em;
         padding-bottom: 2em;
         border-radius: 30px;
+        border: none;
     }
 
     .linkedin {
         padding-top: 2em;
         padding-bottom: 2em;
         border-radius: 30px;
+        border: none;
     }
 
     .container2 {
-        gap: 0.5em;
+        gap: 0em;
     }
 
     .about-content .button a {
@@ -1431,7 +1457,7 @@ header {
     }
 
     .container2 h3 {
-        font-size: 1em;
+        display: none;
     }
 
     .container2 h4 {
