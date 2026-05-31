@@ -1125,6 +1125,12 @@ header {
         margin-left: 5%;
         margin-bottom: 5%;
     }
+    
+    .container3 img {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 0;
+    }
 
     .description {
         margin-left: 5%;
