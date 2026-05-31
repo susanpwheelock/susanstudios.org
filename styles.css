@@ -1051,6 +1051,7 @@ header {
         padding-bottom: 1em;
         border-radius: 30px;
         border: none;
+        transition: all 0.5s ease;
     }
 
      .email:hover {
@@ -1062,6 +1063,7 @@ header {
         padding-bottom: 1em;
         border-radius: 30px;
         border: none;
+        transition: all 0.5s ease;
     }
 
      .instagram:hover {
@@ -1073,6 +1075,7 @@ header {
         padding-bottom: 1em;
         border-radius: 30px;
         border: none;
+        transition: all 0.5s ease;
     }
 
     .linkedin:hover {
@@ -1431,21 +1434,36 @@ header {
         padding-bottom: 2em;
         border-radius: 30px;
         border: none;
+        transition: all 0.5s ease;
     }
+
+    .email:hover {
+    border: none;
+}
 
     .instagram {
         padding-top: 2em;
         padding-bottom: 2em;
         border-radius: 30px;
         border: none;
+        transition: all 0.5s ease;
     }
+
+    .instagram:hover {
+    border: none;
+}
 
     .linkedin {
         padding-top: 2em;
         padding-bottom: 2em;
         border-radius: 30px;
         border: none;
+        transition: all 0.5s ease;
     }
+
+    .linkedin:hover {
+    border: none;
+}
 
     .container2 {
         gap: 0em;
