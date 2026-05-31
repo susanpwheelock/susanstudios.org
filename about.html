@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://use.typekit.net/pkf3yhz.css">
+        <link rel="stylesheet" href="https://use.typekit.net/pkf3yhz.css">
+        <link rel="stylesheet" href="https://use.typekit.net/pkf3yhz.css">
+        <link rel="icon" type="image/x-icon" href="Images/SW_LOGOWEB.png">
+        <title>Susan Wheelock Portfolio</title>
+    </head>
+    <body>
+        <div id="top1"></div>
+        <header>
+            <nav class="nav">
+                <div class="logo">
+                    <a href="index.html"><img src="Images/SW_LOGO.png"></a>
+                </div>
+                <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li id="top1"><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="aboutme">
+            <div class="about">
+                <div class="about-image">
+                    <img src="Images/Home_Images/Headshot2.png" alt="Headshot picture of the graphic designer Susan Wheelock with a pink background">
+                </div>
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p>I’m a Graphic Designer with a strong Marketing focus, bringing creative strategy and visual communication together. I am currently in my third year attending Illinois State University, studying Graphic Design and Marketing. With creativity as my compass and technology as my medium, I devote my energy to creating expressive web designs and meaningful user experiences.</p>
+                    <p>Over the course of my academic career, I’ve built a strong foundation in design and digital craft, and I’m always excited to explore new opportunities. Don’t hesitate to reach out through email or Instagram.</p>
+                    <p class="button"><a href="Images/GD_Resume.pdf" target="_blank">Resume</a></p>
+                </div>
+            </div>
+            <section class="hero-container">
+                <div class="contact1">
+                    <h2>Want to Reach out? Contact Me!</h2>
+                    <div class="container2">
+                        <a class="email" href="mailto:susan.p.wheelock@gmail.com" target="_blank">
+                            <img src="Images/Icons/Mail.svg"  class="inside-image1" alt="Hover Image"alt="Icon of simple white mail logo with a marroon red background">
+                            <h3>My Email</h3>
+                            <h4>susan.p.wheelock@gmail.com</h4>
+                        </a>
+                        <a class="instagram" href="https:///www.instagram.com/susanstudios/" target="_blank">
+                            <img src="Images/Icons/Instagram.svg" class="inside-image2" alt="Icon of simple white phone logo with a marroon red background">
+                            <h3>My Instagram</h3>
+                            <h4>@susanstudios</h4>
+                        </a>
+                        <a class="linkedin" href="https://www.linkedin.com/in/susan-wheelock-5331263b1" target="_blank">
+                            <img src="Images/Icons/linked_in.svg" class="inside-image3" alt="Icon of simple white Linked In logo with a marroon red background">
+                            <h3>My Linked In</h3>
+                            <h4>susan-wheelock</h4>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="information">
+                <a href="#top1">
+                    <img class="footlogo" src="Images/SW_LOGO2.png">
+                </a>
+                <div class="socials">
+                        <a href="mailto:susan.p.wheelock@gmail.com" target="_blank">
+                            <img src="Images/Icons/Footer Icons/Mail.svg" alt="Icon of simple white mail logo">
+                        </a>
+                        <a href="https:///www.instagram.com/susanstudios/" target="_blank">
+                            <img src="Images/Icons/Footer Icons/Instagram.svg" alt="Icon of simple white Instagram logo">
+                        </a>
+                        <a href="https://www.linkedin.com/in/susan-wheelock-5331263b1" target="_blank">
+                            <img src="Images/Icons/Footer Icons/linked_in.svg" alt="Icon of simple white LinkedIn logo">
+                        </a>
+                </div>
+            </div>
+            <p class="copy">© Susan Wheelock 2025, All Rights Reserved</p>
+        </footer>
+        <script>
+            // 1. Grab your elements using the IDs from your HTML
+            const menuToggle = document.getElementById('mobile-menu');
+            const navLinks = document.getElementById('nav-links');
+
+            // 2. Single click event to handle opening/closing and background freezing
+            menuToggle.addEventListener('click', () => {
+                console.log("Button was clicked!"); // Your test log
+            
+                menuToggle.classList.toggle('active');       // Animates/toggles the button lines
+                navLinks.classList.toggle('active');         // Slides or drops down the menu container
+                document.body.classList.toggle('menu-open'); // Freezes or unfreezes the background scroll
+            });
+
+            // 3. Close everything and unfreeze the background when an individual link is clicked
+            const individualLinks = navLinks.querySelectorAll('a');
+            individualLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.classList.remove('menu-open');
+                });
+            });
+            const header = document.querySelector('header');
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener('scroll', () => {
+                const currentScrollY = window.scrollY;
+                const isMenuOpen = document.body.classList.contains('menu-open');
+
+                // Safety: Do not animate the header if the mobile hamburger menu is open
+                if (!isMenuOpen) {
+                
+                // 1. If scrolling DOWN and you have scrolled past the header height, HIDE it
+                if (currentScrollY > lastScrollY && currentScrollY > 80) {
+                    header.classList.add('nav-hidden');
+                } 
+                // 2. If scrolling UP, SHOW it instantly
+                else if (currentScrollY < lastScrollY) {
+                    header.classList.remove('nav-hidden');
+                }
+                
+                }
+
+                // Always keep the navbar visible when you are at the very top of the page
+                if (currentScrollY <= 10) {
+                header.classList.remove('nav-hidden');
+                }
+
+                // Update the scroll position marker for the next scroll check
+                lastScrollY = currentScrollY;
+            });
+        </script>
+    </body>
+</html>

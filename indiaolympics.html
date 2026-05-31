@@ -11,14 +11,21 @@
         <title>Susan Wheelock Portfolio</title>
     </head>
     <body>
+        <div id="top2"></div>
         <header>
-            <nav class="home-nav">
-                <ul>
-                    <img class="logo" src="Images/SW_LOGO.png">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Images/GD_Resume.pdf" target="_blank">Resume</a></li>
-                    <li id="top2"><a href="work.html">Work</a></li>
-                    <li><a href="index.html#contact1">Contact</a></li>
+            <nav class="nav">
+                <div class="logo">
+                    <a href="index.html"><img src="Images/SW_LOGO.png"></a>
+                </div>
+                <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li id="top1"><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
         </header>
@@ -36,40 +43,88 @@
                 </div>
             </div>
             <div class="container3">
-                <div class="olympic">
-                    <img src="Images/Olympics_Images/Jute_Tote_Bag_Mockup.jpeg" alt="Mockup of a juke tote bag on a white chair with jeans hanging on it with the India Olympics logo on it with other designs">
-                    <img src="Images/Olympics_Images/Water_Bottle_Mockup.jpg" alt="Mockup of a water bottle with white, blue, and red stripes with the words 2040 Olympics and the India Olympics Logo on it">
-                </div>
+            <div class="olympic">
+                <img src="Images/Olympics_Images/Jute_Tote_Bag_Mockup.jpeg" alt="Mockup of a juke tote bag on a white chair with jeans hanging on it with the India Olympics logo on it with other designs">
+                <img src="Images/Olympics_Images/Water_Bottle_Mockup.jpg" alt="Mockup of a water bottle with white, blue, and red stripes with the words 2040 Olympics and the India Olympics Logo on it">
+            </div>
                 <img src="Images/Olympics_Images/Billboard_Mockup.jpg" alt="Mockup of a billboard with white, blue, and red stripes with the words 2040 Olympics and the India Olympics Logo on it with other designs">
-                <img src="Images/Olympics_Images/FINAL_LOGO.png" alt="Image of the 2040 India Olympics logo in color and black and white">
+                <img class="olympic-logo" src="Images/Olympics_Images/FINAL_LOGO.png" alt="Image of the 2040 India Olympics logo in color and black and white">
             </div>
             <div class="button">
-                <p><a href="work.html">View More</a></p>
+                <p><a href="portfolio.html">View More</a></p>
             </div>
         </main>
         <footer>
             <div class="information">
                 <a href="#top2">
-                    <img class="footlogo" src="Images/SW_LOGO.png">
+                    <img class="footlogo" src="Images/SW_LOGO2.png">
                 </a>
-                <div class="contact2">
-                    <h3>Contact</h3>
-                    <p><a href="mailto:susan.p.wheelock@gmail.com" target="_blank">susan.p.wheelock@gmail.com</a></p>
-                </div>
-                <div class="navigation">
-                    <h3>Navigation</h3>
-                    <p><a href="index.html">Home</a></p>
-                    <p><a href="work.html">Work</a></p>
-                    <p><a href="Images/GD_Resume.pdf" target="_blank">Resume</a></p>
-                    <p><a href="index.html#contact1">Contact</a></p>
-                </div>
                 <div class="socials">
-                    <h3>Socials</h3>
-                    <p><a href="https:///www.instagram.com/susanstudios/" target="_blank">Instagram</a></p>
-                    <p>Facebook</p>
-                    <p><a href="https://www.linkedin.com/in/susan-wheelock-5331263b1" target="_blank">LinkedIn</a></p>
+                        <a href="mailto:susan.p.wheelock@gmail.com" target="_blank">
+                            <img src="Images/Icons/Footer Icons/Mail.svg" alt="Icon of simple white mail logo">
+                        </a>
+                        <a href="https:///www.instagram.com/susanstudios/" target="_blank">
+                            <img src="Images/Icons/Footer Icons/Instagram.svg" alt="Icon of simple white Instagram logo">
+                        </a>
+                        <a href="https://www.linkedin.com/in/susan-wheelock-5331263b1" target="_blank">
+                            <img src="Images/Icons/Footer Icons/linked_in.svg" alt="Icon of simple white LinkedIn logo">
+                        </a>
                 </div>
             </div>
-            <p>© Susan Wheelock 2025, All Rights Reserved</p>
+            <p class="copy">© Susan Wheelock 2025, All Rights Reserved</p>
         </footer>
+        <script>
+            // 1. Grab your elements using the IDs from your HTML
+            const menuToggle = document.getElementById('mobile-menu');
+            const navLinks = document.getElementById('nav-links');
+
+            // 2. Single click event to handle opening/closing and background freezing
+            menuToggle.addEventListener('click', () => {
+                console.log("Button was clicked!"); // Your test log
+            
+                menuToggle.classList.toggle('active');       // Animates/toggles the button lines
+                navLinks.classList.toggle('active');         // Slides or drops down the menu container
+                document.body.classList.toggle('menu-open'); // Freezes or unfreezes the background scroll
+            });
+
+            // 3. Close everything and unfreeze the background when an individual link is clicked
+            const individualLinks = navLinks.querySelectorAll('a');
+            individualLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.classList.remove('menu-open');
+                });
+            });
+            const header = document.querySelector('header');
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener('scroll', () => {
+                const currentScrollY = window.scrollY;
+                const isMenuOpen = document.body.classList.contains('menu-open');
+
+                // Safety: Do not animate the header if the mobile hamburger menu is open
+                if (!isMenuOpen) {
+                
+                // 1. If scrolling DOWN and you have scrolled past the header height, HIDE it
+                if (currentScrollY > lastScrollY && currentScrollY > 80) {
+                    header.classList.add('nav-hidden');
+                } 
+                // 2. If scrolling UP, SHOW it instantly
+                else if (currentScrollY < lastScrollY) {
+                    header.classList.remove('nav-hidden');
+                }
+                
+                }
+
+                // Always keep the navbar visible when you are at the very top of the page
+                if (currentScrollY <= 10) {
+                header.classList.remove('nav-hidden');
+                }
+
+                // Update the scroll position marker for the next scroll check
+                lastScrollY = currentScrollY;
+            });
+        </script>
     </body>
+</html>

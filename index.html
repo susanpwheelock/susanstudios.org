@@ -8,91 +8,125 @@
         <link rel="stylesheet" href="https://use.typekit.net/pkf3yhz.css">
         <link rel="stylesheet" href="https://use.typekit.net/pkf3yhz.css">
         <link rel="icon" type="image/x-icon" href="Images/SW_LOGOWEB.png">
-        <title>Susan Wheelock Portfolio</title>
+        <title>Susan Wheelock Studios</title>
     </head>
     <body>
+        <div id="top1"></div>
         <header>
-            <nav class="home-nav">
-                <ul>
-                    <img class="logo" src="Images/SW_LOGO.png">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Images/GD_Resume.pdf" target="_blank">Resume</a></li>
-                    <li id="top1"><a href="work.html">Work</a></li>
-                    <li><a href="#contact1">Contact</a></li>
+            <nav class="nav">
+                <div class="logo">
+                    <a href="index.html"><img src="Images/SW_LOGO.png"></a>
+                </div>
+                <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li id="top1"><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
         </header>
-        <main class="home">
-            <div class="about">
-                <div class="about-image">
-                    <img src="Images/Home_Images/Headshot.jpeg" alt="Headshot picture of the graphic designer Susan Wheelock with a pink background">
-                </div>
-                <div class="about-content">
-                    <h1>Hi! I'm Susan.</h1>
-                    <p>I’m a Graphic Designer with a strong Marketing focus, bringing creative strategy and visual communication together. I am currently in my third year attending Illinois State University, studying Graphic Design and Marketing. With creativity as my compass and technology as my medium, I devote my energy to creating expressive web designs and meaningful user experiences.</p>
-                    <p>Over the course of my academic career, I’ve built a strong foundation in design and digital craft, and I’m eager to transform these skills into real-world, hands-on projects. I am always excited to explore new opportunities. Don’t hesitate to reach out through email or Instagram.</p>
-                    
-                </div>
+        <main>
+            <div class="front-image">
+                <img src="Images/Home_Images/FrontWeb.png" alt="Front Image">
             </div>
-            <div class="my-work">
-                <h2 id="work">My Work</h2>
-                <div class="container1">
-                    <a href="cookbook.html"><img class="cook" src="Images/Home_Images/Cookbook.svg" alt="Close up of a mockup of two posters of expressive type, one in black, and one and inverted version of the first."></a>
-                    <a href="indiaolympics.html"><img class="tote" src="Images/Home_Images/Jute_Tote_Bag_Mockup.jpeg" alt="Close up of a mockup of a juke totebag mockup with olympic logo and other decals on a white chair with jeans on the chair."></a>
-                    <a href="sugarshot.html"><img class="desktop" src="Images/Home_Images/Two_Desktops.jpeg" alt="Close up of mockup of two desktops with header image of Sugar Shot website with a pink background."></a>
-                    <a href="expressivetype.html"><img class="mock" src="Images/Home_Images/Mock3.jpeg" alt="Close up of a mockup of two posters of expressive type, one in black, and one and inverted version of the first."></a>
-                    <a href="netflixposter.html"><img class="tv" src="Images/Home_Images/TV2.jpeg" alt="Mockup of Netflix movie advertisement on a large tv in a purple room."></a>
-                    <a href="symbols.html"><img class="symbol" src="Images/Home_Images/Symbols2.jpeg" alt="Mockup of a closse up of global warming zine booklet front and back cover with a pink background."></a>
+            <div class="featured-work">
+                <h2>Featured Work</h2>
+                <div class="featured-container">
+                    <div class="card card-1">
+                        <a href="cookbook.html"><img class="cook" src="Images/Home_Images/PowerBites.png" alt="Close up of a mockup of Power Bites Brown Cookbook with a muscular arm and various colored foods."></a>
+                        <div class="card-overlay">
+                            <h2>Power Bites</h2>
+                            <p>Typographic Cookbook</p>
+                        </div>
+                    </div>
+                    <div class="card card-2">
+                        <a href="bloom.html"><img class="bloom" src="Images/Home_Images/Bloom.png" alt="Close up of mockup of Bloom Heritage Festivak poster near a flower shop, it is pink with various purple flowers."></a>
+                        <div class="card-overlay">
+                            <h2>Bloom Heritage</h2>
+                            <p>Festival Branding</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="button">
-                <p><a href="work.html"> More Projects</a></p>
-            </div>
-            <div id="contact1" class="contact1">
-                <h2>Want to Reach out? Contact Me!</h2>
-                <div class="container2">
-                    <a class="email" href="mailto:susan.p.wheelock@gmail.com" target="_blank">
-                        <img src="Images/Icons/Mail.svg" alt="Icon of simple white mail logo with a marroon red background">
-                        <h3>My Email</h3>
-                        <h4>susan.p.wheelock@gmail.com</h4>
-                    </a>
-                    <a class="phone" href="https:///www.instagram.com/susanstudios/" target="_blank">
-                        <img src="Images/Icons/Instagram.svg" alt="Icon of simple white phone logo with a marroon red background">
-                        <h3>My Instagram</h3>
-                        <h4>@susanstudios</h4>
-                    </a>
-                    <a class="linkedin" href="https://www.linkedin.com/in/susan-wheelock-5331263b1" target="_blank">
-                        <img src="Images/Icons/linked_in.svg" alt="Icon of simple white Linked In logo with a marroon red background">
-                        <h3>My Linked In</h3>
-                        <h4>susan-wheelock</h4>
-                    </a>
-                </div>
+                <p><a href="portfolio.html"> My Entire Portfolio</a></p>
             </div>
         </main>
         <footer>
             <div class="information">
                 <a href="#top1">
-                    <img class="footlogo" src="Images/SW_LOGO.png">
+                    <img class="footlogo" src="Images/SW_LOGO2.png">
                 </a>
-                <div class="contact2">
-                    <h3>Contact</h3>
-                    <p><a href="mailto:susan.p.wheelock@gmail.com" target="_blank">susan.p.wheelock@gmail.com</a></p>
-                </div>
-                <div class="navigation">
-                    <h3>Navigation</h3>
-                    <p><a href="index.html">Home</a></p>
-                    <p><a href="work.html">Work</a></p>
-                    <p><a href="Images/GD_Resume.pdf" target="_blank">Resume</a></p>
-                    <p><a href="index.html#contact1">Contact</a></p>
-                </div>
                 <div class="socials">
-                    <h3>Socials</h3>
-                    <p><a href="https:///www.instagram.com/susanstudios/" target="_blank">Instagram</a></p>
-                    <p>Facebook</p>
-                    <p><a href="https://www.linkedin.com/in/susan-wheelock-5331263b1" target="_blank">LinkedIn</a></p>
+                    <a href="mailto:susan.p.wheelock@gmail.com" target="_blank">
+                        <img src="Images/Icons/Footer Icons/Mail.svg" alt="Icon of simple white mail logo">
+                    </a>
+                    <a href="https:///www.instagram.com/susanstudios/" target="_blank">
+                        <img src="Images/Icons/Footer Icons/Instagram.svg" alt="Icon of simple white Instagram logo">
+                    </a>
+                    <a href="https://www.linkedin.com/in/susan-wheelock-5331263b1" target="_blank">
+                        <img src="Images/Icons/Footer Icons/linked_in.svg" alt="Icon of simple white LinkedIn logo">
+                    </a>
                 </div>
             </div>
-            <p>© Susan Wheelock 2025, All Rights Reserved</p>
+            <p class="copy">© Susan Wheelock 2025, All Rights Reserved</p>
         </footer>
+        <script>
+            // 1. Grab your elements using the IDs from your HTML
+            const menuToggle = document.getElementById('mobile-menu');
+            const navLinks = document.getElementById('nav-links');
+
+            // 2. Single click event to handle opening/closing and background freezing
+            menuToggle.addEventListener('click', () => {
+                console.log("Button was clicked!"); // Your test log
+            
+                menuToggle.classList.toggle('active');       // Animates/toggles the button lines
+                navLinks.classList.toggle('active');         // Slides or drops down the menu container
+                document.body.classList.toggle('menu-open'); // Freezes or unfreezes the background scroll
+            });
+
+            // 3. Close everything and unfreeze the background when an individual link is clicked
+            const individualLinks = navLinks.querySelectorAll('a');
+            individualLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.classList.remove('menu-open');
+                });
+            });
+            const header = document.querySelector('header');
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener('scroll', () => {
+                const currentScrollY = window.scrollY;
+                const isMenuOpen = document.body.classList.contains('menu-open');
+
+                // Safety: Do not animate the header if the mobile hamburger menu is open
+                if (!isMenuOpen) {
+                
+                // 1. If scrolling DOWN and you have scrolled past the header height, HIDE it
+                if (currentScrollY > lastScrollY && currentScrollY > 80) {
+                    header.classList.add('nav-hidden');
+                } 
+                // 2. If scrolling UP, SHOW it instantly
+                else if (currentScrollY < lastScrollY) {
+                    header.classList.remove('nav-hidden');
+                }
+                
+                }
+
+                // Always keep the navbar visible when you are at the very top of the page
+                if (currentScrollY <= 10) {
+                header.classList.remove('nav-hidden');
+                }
+
+                // Update the scroll position marker for the next scroll check
+                lastScrollY = currentScrollY;
+            });
+        </script>
     </body>
 </html>
