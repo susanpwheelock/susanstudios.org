@@ -349,6 +349,22 @@ display: grid;
     grid-row: span 3;
 }
 
+.card-11 {
+    grid-row: span 2;
+}
+
+.card-12 {
+    grid-row: span 4;
+}
+
+.card-13 {
+    grid-row: span 2;
+}
+
+.card-14 {
+    grid-row: span 4;
+}
+
 .card {
   position: relative;         /* CRUCIAL: Anchors the absolute text box inside this card */
   border-radius: 20px;        /* Matches your design curve */
@@ -660,7 +676,7 @@ display: grid;
     padding-bottom: 5%;
     padding-left: 10%;
     padding-right: 10%;
-    border-radius: 50px 50px 50px 50px;
+    border-radius: 20px 20px 20px 20px;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 2%;
@@ -682,7 +698,7 @@ display: grid;
 .container3 img{
     max-width: 100%;
     margin-bottom: 1em;
-    border-radius: 50px 50px 50px 50px;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .container3 {
