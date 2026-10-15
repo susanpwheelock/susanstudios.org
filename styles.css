@@ -265,6 +265,8 @@ footer {
 
 main {
     background-color: #fff9f3;
+    padding-left: 5%;        /* Adds safe inner margins for mobile views */
+    padding-right: 5%;
 }
 
 .featured-work {
@@ -363,6 +365,14 @@ display: grid;
 
 .card-14 {
     grid-row: span 4;
+}
+
+.card-15 {
+    grid-row: span 4;
+}
+
+.card-16 {
+    grid-row: span 3;
 }
 
 .card {
@@ -739,6 +749,7 @@ display: grid;
     grid-template-rows: 2fr;
     align-items: stretch;
     gap: 1em;
+    padding-bottom: 1em;
 }
 
 .expressive img {
